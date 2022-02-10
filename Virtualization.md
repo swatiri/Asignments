@@ -1,0 +1,24 @@
+# Introduction
+
+Virtualization is a technoloogy that allows access and creation of useful IT services using recourses that are traditionaly bound to a hardware.
+
+## Types of virtualisation
+
+1. Server virtualisation
+2. Hardware virtualization
+3. Software virtualisation
+5. Application virtualization
+6. Storage virtualization
+7. Network virtualisation
+8. Memory virtualisation
+9. Desktop virtualization
+10. Data virtualisation
+11. Operating system virtualiation
+
+## Benefits of virtualisation
+
+ 1. Reduces IT expences
+ 2. Reduces workload
+ 3. Promotes digital enter
+
+
