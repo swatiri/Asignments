@@ -1,6 +1,7 @@
 # Introduction
 
-Virtualization is a technoloogy that allows access and creation of useful IT services using recourses that are traditionaly bound to a hardware.
+Virtualization is a technology that allows access and creation of useful IT services using recourses that are traditionaly bound to a hardware.
+It allows  an organisation to run several virtual computers, opertating sysytems and applications on a single server and partitioning it into several virtual servers.
 
 ## Types of virtualisation
 
@@ -19,6 +20,8 @@ Virtualization is a technoloogy that allows access and creation of useful IT ser
 
  1. Reduces IT expences
  2. Reduces workload
- 3. Promotes digital enter
+ 3. Promotes digital enterpeneurship
+ 4. Faster deployment of recources
+ 5. Increase efficiency and producivity
 
 
