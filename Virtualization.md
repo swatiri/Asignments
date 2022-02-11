@@ -1,6 +1,6 @@
 # Introduction
 
-Virtualization is a technology that allows access and creation of useful IT services using recourses that are traditionaly bound to a hardware.
+Virtualization is a technology that runs on a software known as hypervisor, that allows access and creation of useful IT services using resources that are traditionaly bound to a hardware.
 It allows  an organisation to run several virtual computers, opertating sysytems and applications on a single server and partitioning it into several virtual servers.
 
 ## Types of virtualization
@@ -31,5 +31,12 @@ It allows  an organisation to run several virtual computers, opertating sysytems
 3. Microsoft
 4. Oracle
 5. Amazon
+
+### Containerization vs Virtualization
+A container is a lightweigh software that virtually packages  and isolates  multiple applications for deployment from one virtual machine or server while virtualization allows you to run several operating systems on the hardware of a single server. 
+
+
+
+
 
 
