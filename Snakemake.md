@@ -27,7 +27,28 @@ Installing snakemake
 After succesfull  downloading and installation the command below displays  usage 
  
  `snakemake --help`
-  
+ 
+ ### Working with snakemake
+ 
+Create an empty workflow in the current directory
+
+`touch Snakefile`
+`snakemake -n`
+
+Create a rule following the snakemake syntax e.g: to map sequences to the reference genome create a rule file that looks like this
+
+rule map_reads:
+  input:
+      "data/genome.fa",
+      "data/samples/A.fastq"
+  output:
+      "results/mapped/A.bam"
+  conda:
+      "envs/mapping.yaml"
+  shell:
+      "bwa mem {input} | samtools view -b - > {output}"
+Run your workflow
+snakemake --use-conda results/mapped/A.bam --cores 1
 
 
 
