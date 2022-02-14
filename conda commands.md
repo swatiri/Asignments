@@ -13,6 +13,9 @@ I created the environment and named it **shawat** using the commmand below
  # Exporting the environment
  `conda env export > conda assignment.yml`
  
+ # Creating an environment from the .yml file
+ `conda env create -f assignment.yml`
+ 
  
  
  
