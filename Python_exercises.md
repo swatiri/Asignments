@@ -84,6 +84,22 @@ And add document for your own function
 Hints:
 The built-in document method is __doc__
 
+```
+def SumNum(*args):
+    result=0
+    for i in args:
+        result=i
+    return i
+    
+print(SumNum.__doc__)
+print("\n"+"-"*100+"\n")
+print(abs.__doc__)
+print("\n"+"-"*100+"\n")
+print(int.__doc__)
+print("\n"+"-"*100+"\n")
+print(input.__doc__)
+```
+
 ### Question 37
 
 Define a function which can generate and print a list where the values are square of numbers between 1 and 20 (both included).
@@ -113,6 +129,20 @@ With a given tuple (1,2,3,4,5,6,7,8,9,10), write a program to print the first ha
 Hints:
 
 Use [n1:n2] notation to get a slice from a tuple.
+```
+my_tuple=(1,2,3,4,5,6,7,8,9,10)
+print("tuple_1", str(my_tuple))
+result=tuple(my_tuple[x:x +5]
+    for x in range(0, len(my_tuple), 5))
+print("final_tuples", str(result[0]))
+print("final_tuples", str(result[1]))
+
+output
+tuple_1 (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+final_tuples (1, 2, 3, 4, 5)
+final_tuples (6, 7, 8, 9, 10)
+
+```
 
 
 ### Question 45
@@ -123,3 +153,14 @@ Hints:
 
 Use filter() to filter some elements in a list.
 Use lambda to define anonymous functions.
+
+```
+numbers=[1,2,3,4,5,6,7,8,9,10]
+even_numbers_iterator=filter(lambda x: (x%2 ==0), numbers)
+even_numbers=list(even_numbers_iterator)
+print(even_numbers)
+
+output
+[2,4,6,8,10]
+
+```
