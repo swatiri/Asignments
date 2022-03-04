@@ -11,6 +11,18 @@ Then, the output should be:
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
+```
+def factorial(n):
+    value = 1
+    for i in range(1, n+1):
+        value = value * i
+    return value
+
+number = int(input("Type a number: "))
+print(factorial(number))
+
+```
+
 ### Question 7
 Level 2
 
@@ -25,6 +37,19 @@ Then, the output of the program should be:
 
 Hints:
 Note: In case of input data being supplied to the question, it should be assumed to be a console input in a comma-separated form.
+
+```
+row_num = int(input("Input number of rows: "))
+col_num = int(input("Input number of columns: "))
+multi_list = [[0 for col in range(col_num)] for row in range(row_num)]
+
+for row in range(row_num):
+    for col in range(col_num):
+        multi_list[row][col]= row*col
+
+print(multi_list)
+
+```
 
 ### Question 10
 
@@ -41,6 +66,20 @@ Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 We use set container to remove duplicated data automatically and then use sorted() to sort the data.
 
+```
+phrase = input("Type in: ")
+phrase_splited = phrase.split(' ')
+
+word_list = []
+for i in phrase_splited:
+    if i not in word_list:
+        word_list.append(i)
+    else:
+        continue
+word_list.sort()
+print((' ').join(word_list))
+```
+
 Level 2
 
 ### Question 12
@@ -50,6 +89,20 @@ The numbers obtained should be printed in a comma-separated sequence on a single
 
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
+
+```
+numbers = []
+for x in range (1000, 3002):
+    numSplit = [int(d) for d in str(x)]
+    odd = False
+    for y in range (1, len(numSplit)):
+        if numSplit[y] % 2 != 0:
+            odd = True
+    if (odd == False):
+        numbers.append(x)
+print (numbers)
+
+```
 
 
 ### Question 17
@@ -109,6 +162,17 @@ Hints:
 Use ** operator to get power of a number.
 Use range() for loops.
 Use list.append() to add values into a list.
+```
+def printValues():
+	l = list()
+	for i in range(1,21):
+		l.append(i**2)
+	print(l)
+		
+printValues()
+output
+[1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225, 256, 289, 324, 361, 400]
+```
 
 ### Question 41
 
@@ -120,6 +184,18 @@ Use ** operator to get power of a number.
 Use range() for loops.
 Use list.append() to add values into a list.
 Use tuple() to get a tuple from a list.
+
+```
+a=[]
+for i in range(1,21):
+    a.append(i**2)
+print(tuple(a))
+
+output
+(1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225, 256, 289, 324, 361, 400)
+
+```
+
 
 
 ### Question 42
